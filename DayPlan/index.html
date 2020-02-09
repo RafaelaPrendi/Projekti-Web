@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>DayPlan</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" media="all">
+
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/98321fec91.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- Javascript scripts -->
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- menu list -->
+    <div class="menu">
+        <nav class="navbar navbar-expand-lg" style="background-color: #272343;">
+            <a class="navbar-brand" href="index.html"> <img src="images/logo.png" style=" width: 30px; height: auto; margin-right: 6px;" alt=""> DayPlan</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#title">Regjistrohu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hyr.php" style="color:#FFFCF2;">Hyr</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ndihme.html" class="nav-link">Ndihme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.php" class="nav-link">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- title section and logo -->
+    <section id="title">
+        <div class="row title">
+            <!-- FORMA E RREGJISTRIMIT-->
+            <div class="col-lg-6" id="homeTable">
+                <h1 class="title">DayPlan</h1>
+                <h3>Planifikuesi juaj me i mire.</h3>
+                <div class="myform container">
+                    <h4 id="form-title"></h4>
+                    <form action="regjistrohu.php" method="POST">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="Emri">Emri</label>
+                                <input type="text" class="form-control" name="emri" id="Emri" placeholder="Emri Juaj" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="Mbiemri">Mbiemri</label>
+                                <input type="text" class="form-control" name="mbiemri" id="Mbiemri" placeholder="Mbiemi juaj" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="dikush@gmail.com" required>
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="fjalekalimi">Fjalekalimi</label>
+                                <input type="password" class="form-control" name="fjalekalimi" id="fjalekalimi" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="repeat">Rishkruani fjalekalimin</label>
+                                <input type="password" class="form-control" name="repeat" id="repeat" required>
+                            </div>
+                            <p style="color:gray; margin-bottom: 25px;">Fjalekalimi , me shume se 6 karaktere dhe te perfshije shkronje te madhe dhe numer.</p>
+                        </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="Check" name="check">
+                            <label class="form-check-label" for="Check">
+                                             Jam dakort me kushtet dhe rregullat e faqes .
+                            </label>
+                        </div>
+
+                    </div>
+                    <p style="color:gray; padding-left: 30px;">Keni tashme nje llogari?</p>
+
+                </div>
+                <div class="form-row">
+                    <div class="col-sm-4">
+                        <button id="regjistrohuBtn" name="regjistrohu" type="submit" class="mainBtn btn btn-lg btn-outline-dark">Regjistrohu
+                         falas!</button></div>
+                    <div class="col-sm-4" style="margin-left: 135px;">
+                        <a type="button" name="hyr" href="hyr.html" class="mainBtn btn btn-lg btn-dark btnHyr">Hyr</a></div>
+                </div>
+                </form>
+            </div>
+
+            <!-- Description -->
+            <div class="col-lg-6" style="text-align: right;">
+                <img id="fotoKryesore" src="images/mainPic.jpg" alt="FOTO">
+            </div>
+
+
+    </section>
+
+
+
+    <!-- Features-->
+    <section id="features">
+        <div class="row">
+            <div class="col-md-4 feature">
+                <i class="far fa-calendar-alt fa-2x"></i>
+                <h3 class="headings"> Menaxho lehtesisht diten.</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing</p>
+
+            </div>
+            <div class="col-md-4 feature">
+                <i class="far fa-clock fa-2x"></i>
+                <h3 class="headings">Kujtohu per detyrat e dites.</h3>
+                <p>Lorem Ipsum has been the industry's </p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-suitcase fa-2x feature"></i>
+                <h3 class="headings">Frymezohu per te bere me shume.</h3>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Help section -->
+    <section id="help">
+        <div class="row">
+            <div class="col-md-6 help">
+                <i class="fas fa-question fa-2x"></i>
+                <h5 class="headings">Per cdo pyetje dergoni nje mesazh ne kontaktet me poshte.</h5>
+            </div>
+            <div class="col-md-6 help">
+                <i class="fas fa-info fa-2x"></i>
+                <h5 class="headings">Per me shume informacion, vizitoni llogarite tona ne rrjetet sociale.
+                    </h3>
+            </div>
+        </div>
+    </section>
+    <!-- Social media -->
+    <section id="contact">
+        <footer>
+            <a href="https://www.facebook.com/" class="social-media-first"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="https://www.instagram.com/" class="social-media-first"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="mailto:rafaelaprendi7@gmail.com" class="social-media-first"><i class="fas fa-envelope fa-lg"></i></a>
+
+            <p class="footer" style="color: #FFFCF2;"><i class="far fa-copyright"></i> Copyright 2020 Rafaela Prendi.</p>
+        </footer>
+
+    </section>
+
+    <script src="index.js" charset="utf-8"></script>
+
+</body>
+
+</html>

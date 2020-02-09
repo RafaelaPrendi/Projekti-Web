@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/98321fec91.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- Javascript scripts -->
+    <script src="index.js"></script>
+    <!-- <script src="datepicker.js"></script> -->
+    <style>
+        body {
+            background-color: #fffcf2;
+        }
+    </style>
+
+</head>
+
+<body class="dashboard">
+    <div class="row">
+        <div class="col-lg horizontal">
+            <hr>
+        </div>
+    </div>
+    <!-- Navbari anesor -->
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="sidenav">
+
+                <a class="navbar-brand" href="index.html"> <img src="images/logo.png" style=" width: 30px; height: auto; margin-right: 6px;" alt=""> DayPlan</a>
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+                <span id="emriPerdoruesit"></span>
+
+                <a href="shtoEvent.php">Shto event te ri</a>
+                <a href="fshiEvent.php">Fshi nje event</a>
+                <a href=""> <i class="fas fa-check"></i> Sheno si te kryer</a>
+                <a href="">Shto nje njoftim</a>
+                <div class="dropdown">
+                    <a class="btn btn-outline btn-sm dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdownMenuLink" href="">
+                        <i class="fas fa-cog"></i> Rregullimet</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                        <a class="dropdown-item settings-item" href="">- Fshi oren</a>
+                        <a class="dropdown-item settings-item" href="">- Shto oren</a>
+                        <a class="dropdown-item settings-item" href="">- Fshi njoftimin</a>
+                        <a class="dropdown-item settings-item" href="">- Tingulli i njoftimit</a>
+                        <a class="dropdown-item settings-item" href="">- Fshi llogarine time</a>
+                    </div>
+
+                </div>
+
+                <a href="dashboard.php">Dashboard</a>
+                <a href="" class="end-btn"> <i class="fas fa-question"></i> Ndihme</a>
+                <form action="logout.php" method="post">
+                    <a role="button" href="" name="logout"> <i class="fas fa-sign-out-alt"></i> Dil</a>
+                </form>
+
+            </div>
+
+        </div>
+        <div id="eventi"></div>
+</body>
+
+</html>
